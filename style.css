@@ -1,0 +1,151 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+h1 {
+    font-size: 2em;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form Section */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 30px auto;
+}
+
+form h2 {
+    color: #34495e;
+}
+
+label {
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Added to give spacing between buttons */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Resume Output Section */
+#resume-output {
+    display: none;
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 30px auto;
+}
+
+#resume-output h3 {
+    text-align: center;
+    color: #34495e;
+    font-size: 1.8em;
+}
+
+#resume-output div {
+    margin-bottom: 15px;
+}
+
+#resume-output div strong {
+    color: #3498db;
+}
+
+#resume-output div div {
+    color: #7f8c8d;
+    font-size: 1.1em;
+}
+
+/* Clear Form Button */
+#clear-form {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+#clear-form:hover {
+    background-color: #c0392b;
+}
+
+/* Save Button - Positioned below the other buttons */
+#save-button {
+    background-color: #3498db; /* Same blue as other buttons */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Keeps it below the other buttons */
+    width: 100%; /* Ensure it's full-width below the other buttons */
+    display: block; /* Makes the button block-level so it sits below */
+}
+
+#save-button:hover {
+    background-color: #2980b9;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    form, #resume-output {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    button, #clear-form, #save-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+

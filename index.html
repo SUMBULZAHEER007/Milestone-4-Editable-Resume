@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Form Section -->
+    <form id="resume-form">
+        <h2>Personal Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <h2>Education</h2>
+        <label for="education">Education:</label>
+        <textarea id="education" name="education" required></textarea>
+        
+        <h2>Work Experience</h2>
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" name="experience"></textarea>
+        
+        <h2>Skills</h2>
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills"></textarea>
+        
+        <button type="submit">Generate Resume</button>
+        <button type="button" id="clear-form">Clear Form</button>
+    </form>
+
+    <div id="resume-output" style="display: none;">
+        <h3 contenteditable="true">Resume Summary</h3>
+    
+        <div><strong>Name:</strong> <div id="name-output" contenteditable="true">[User's Name]</div></div>
+        <div><strong>Email:</strong> <div id="email-output" contenteditable="true">[User's Email]</div></div>
+        <div><strong>Education:</strong> <div id="education-output" contenteditable="true">[User's Education]</div></div>
+        <div><strong>Work Experience:</strong> <div id="experience-output" contenteditable="true">[User's Work Experience]</div></div>
+        <div><strong>Skills:</strong> <div id="skills-output" contenteditable="true">[User's Skills]</div></div>
+    </div>
+    <button id="save-button">Save Changes</button>
+
+    <script src="dist/script.js"></script> <!-- Link to the TypeScript-compiled JavaScript file -->
+</body>
+</html>
